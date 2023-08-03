@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Зарплата"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/_side-menu.htm',{})
+
+    <main class="page">
+      <section class="template10">
+        <div class="template10__container">
+          <div class="template10__heading _content _heading">
+            <h1>Зарплата</h1>
+          </div>
+
+          <div class="template10__brief template10-brief">
+            <div class="template10-brief__wrapper">
+              <div class="template10-brief__head">
+                <div class="template10-brief__left">
+                  <div class="template10-brief__info">
+                    <div class="template10-brief__caption title-h6">Выдано</div>
+                    <div class="template10-brief__value title-h3">43 000 ₽</div>
+                  </div>
+                </div>
+                <div class="template10-brief__right">
+                  <div class="template10-brief__date">Обновлено 01.03.2023</div>
+                </div>
+              </div>
+
+              <div class="template10-brief__body">
+                <div class="template10-brief__items">
+                  <div class="template10-brief__item">
+                    <div class="template10-brief__label">Расчёт</div>
+                    <div class="template10-brief__text title-h6"><span class="_nowrap">52 909</span> + 95 = <span class="_nowrap">53 004 ₽</span></div>
+                  </div>
+                  <div class="template10-brief__item">
+                    <div class="template10-brief__label">Прошлый остаток</div>
+                    <div class="template10-brief__text title-h6">95 ₽</div>
+                  </div>
+                  <div class="template10-brief__item">
+                    <div class="template10-brief__label">Новый остаток </div>
+                    <div class="template10-brief__text title-h6">4 ₽</div>
+                  </div>
+                </div>
+
+                <div class="template10-brief__button">
+                  <a href="payments-history.html" class="text-link text-link_purple">
+                    <span>история зарплат</span>
+                    <i class="_icon-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div data-tabs class="template10__tabs tabs">
+            <nav data-tabs-titles class="tabs__navigation">
+              <button type="submit" class="tabs__title _tab-active">
+                <div class="template10__link _icon-reviews">
+                  <span class="template4__link-caption">По отзывам</span>
+                  <span class="template4__link-value">14</span>
+                </div>
+              </button>
+              <button type="submit" class="tabs__title ">
+                <div class="template10__link _icon-rubles">
+                  <span class="template4__link-caption">Оплаченные работы</span>
+                  <span class="template4__link-value">11</span>
+                </div>
+              </button>
+            </nav>
+            <div data-tabs-body class="tabs__content">
+              <div class="tabs__body">
+                <div class="table">
+                  <div class="table__wrapper">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>№ заказа</th>
+                          <th>Дата</th>
+                          <th style="width: 20%;">Тема работы</th>
+                          <th>Результат</th>
+                          <th style="width: 30%">Отзыв</th>
+                          <th style="text-align: right;">Премия/Штраф</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-red">
+                                <i class="_icon-not-satisfied"></i>
+                                <span>Не доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-green">
+                                <i class="_icon-satisfied"></i>
+                                <span>Доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-green _nowrap"><strong>+ 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-orange">
+                                <i class="_icon-neutral"></i>
+                                <span>Нейтрален</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p><strong>0</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-red">
+                                <i class="_icon-not-satisfied"></i>
+                                <span>Не доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-green">
+                                <i class="_icon-satisfied"></i>
+                                <span>Доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-green _nowrap"><strong>+ 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-orange">
+                                <i class="_icon-neutral"></i>
+                                <span>Нейтрален</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p><strong>0</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-red">
+                                <i class="_icon-not-satisfied"></i>
+                                <span>Не доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-green">
+                                <i class="_icon-satisfied"></i>
+                                <span>Доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-green _nowrap"><strong>+ 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-orange">
+                                <i class="_icon-neutral"></i>
+                                <span>Нейтрален</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p><strong>0</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Дата">
+                            <div class="_content">
+                              <p>01.03.2023 <br> 13:45</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content">
+                              <p>Доработка №2 к работе №1 (Налоговая систем...</p>
+                            </div>
+                          </td>
+                          <td>
+                            <div class="_content">
+                              <div class="status status_bg-red">
+                                <i class="_icon-not-satisfied"></i>
+                                <span>Не доволен</span>
+                              </div>
+                            </div>
+                          </td>
+                          <td data-title="Отзыв">
+                            <div class="_content">
+                              <p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+                            </div>
+                          </td>
+                          <td data-title="Премия/Штраф" style="text-align: right;">
+                            <div class="_content">
+                              <p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+                  <div class="table__navigation">
+                    <div class="table__pagination pagination">
+                      <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                      <a href="" class="pagination__item pagination__item_page">2</a>
+                      <a href="" class="pagination__item pagination__item_page">3</a>
+                      <a href="" class="pagination__item pagination__item_page">4</a>
+                      <a href="" class="pagination__item pagination__item_page">5</a>
+                      <div class="pagination__item pagination__item_dots">...</div>
+                      <a href="" class="pagination__item pagination__item_page">13</a>
+                    </div>
+
+                    <div class="table__arrows">
+                      <a href="" class="pagination__item pagination__arrow pagination__item_prev _icon-chevron-right"></a>
+                      <a href="" class="pagination__item pagination__arrow pagination__item_next _icon-chevron-right"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tabs__body">
+                <div class="table">
+                  <div class="table__wrapper">
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>№ работы</th>
+                          <th>Тип работы</th>
+                          <th style="width: 20%;">Тема работы</th>
+                          <th>Рейтинг</th>
+                          <th>Срок сдачи <br> Дата выполнения</th>
+                          <th>Базовая стоимость</th>
+                          <th>Штраф за попытки</th>
+                          <th>Штраф за задержку</th>
+                          <th>Премия</th>
+                          <th style="text-align: right;">Итого</th>
+                        </tr>
+                      </thead>
+
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Курсовая работа</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>Анализ финансовых результатов предприятия</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>4</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">350 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 попыток</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">1 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">320 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Контрольная работа, реферат</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>«Аудит материальных ценностей и материальных активов в организации на примере МАУ ДО «ДЮСШ Ишимского района»</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>5</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">750 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap" style="color: #CE4848;">- 248 ₽</span> <br> <span style="color: #8B8D9B;">1 попытка</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">502 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Диплом</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>«Аудит материальных ценностей и материальных активов в организации на примере МАУ ДО «ДЮСШ Ишимского района»</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>5</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">350 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap" style="color: #CE4848;">- 248 ₽</span> <br> <span style="color: #8B8D9B;">1 попытка</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">320 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="_border-bottom-0 pb-0">
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Контрольная работа, реферат</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>«Аудит материальных ценностей и материальных активов в организации на примере МАУ ДО «ДЮСШ Ишимского района»</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>5</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">750 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap" style="color: #CE4848;">- 248 ₽</span> <br> <span style="color: #8B8D9B;">1 попытка</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">502 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr class="_border-top-0 pt-0">
+                          <td class="table__td-spacing" colspan="3"></td>
+                          <td colspan="7">
+                            <div class="table-row-comment status status_border-red">
+                              <div class="table-row-comment__text _content">
+                                <p>Возврат ранее уплаченной суммы и штраф за возврат клиенту по заявлению. Причина: работу не приняли . ВУЗе.</p>
+                              </div>
+                              <div class="table-row-comment__value">- 245 ₽</div>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Курсовая работа</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>Анализ финансовых результатов предприятия</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>4</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">350 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 попыток</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">1 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">320 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Курсовая работа</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>Анализ финансовых результатов предприятия</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>4</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">350 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 попыток</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">1 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">320 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Контрольная работа, реферат</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>«Аудит материальных ценностей и материальных активов в организации на примере МАУ ДО «ДЮСШ Ишимского района»</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>5</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">750 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap" style="color: #CE4848;">- 248 ₽</span> <br> <span style="color: #8B8D9B;">1 попытка</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">502 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Диплом</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>«Аудит материальных ценностей и материальных активов в организации на примере МАУ ДО «ДЮСШ Ишимского района»</p>
+                            </div>
+                          </td>
+                          <td data-title="Рейтинг">
+                            <div class="_content">
+                              <p>5</p>
+                            </div>
+                          </td>
+                          <td data-title="Срок сдачи и Дата выполнения">
+                            <div class="_content">
+                              <p>27.02.2023 <br> -</p>
+                            </div>
+                          </td>
+                          <td data-title="Базовая стоимость">
+                            <div class="_content">
+                              <p class="_nowrap">350 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за попытки">
+                            <div class="_content">
+                              <p><span class="_nowrap" style="color: #CE4848;">- 248 ₽</span> <br> <span style="color: #8B8D9B;">1 попытка</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Штраф за задержку">
+                            <div class="_content">
+                              <p><span class="_nowrap">0 ₽</span> <br> <span style="color: #8B8D9B;">0 день</span></p>
+                            </div>
+                          </td>
+                          <td data-title="Премия">
+                            <div class="_content">
+                              <p class="_nowrap">0 ₽</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #58B02F;" class="_nowrap">320 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <div class="_content">
+                              <a href="order-page.html" class="_nowrap">185485-4</a>
+                            </div>
+                          </td>
+                          <td data-title="Тип работы">
+                            <div class="_content">
+                              <p>Диплом</p>
+                            </div>
+                          </td>
+                          <td data-title="Тема работы">
+                            <div class="_content _excerpt-3">
+                              <p>«Аудит материальных ценностей и материальных активов в организации на примере МАУ ДО «ДЮСШ Ишимского района»</p>
+                            </div>
+                          </td>
+                          <td colspan="6">
+                            <div class="_content">
+                              <p style="color: #CE4848;">Штраф за некачественно выполненную работу!</p>
+                            </div>
+                          </td>
+                          <td data-title="Итого" style="text-align: right;">
+                            <div class="_content">
+                              <p style="color: #CE4848;" class="_nowrap">- 2 540 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+
+                      <tfoot>
+                        <tr>
+                          <td colspan="7" class="table__td-spacing"></td>
+
+                          <td colspan="2">
+                            <div class="_content">
+                              <p style="color: #8B8D9B;">Сумма по работам:</p>
+                            </div>
+                          </td>
+
+                          <td style="text-align: right;">
+                            <div class="_content">
+                              <p class="_nowrap _font-medium">20 264 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="7" class="table__td-spacing"></td>
+
+                          <td colspan="2">
+                            <div class="_content">
+                              <p style="color: #8B8D9B;">Сумма по отзывам:</p>
+                            </div>
+                          </td>
+
+                          <td style="text-align: right;">
+                            <div class="_content">
+                              <p class="_nowrap _font-medium" style="color: #CE4848;">-100 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td colspan="7" class="table__td-spacing"></td>
+
+                          <td colspan="2">
+                            <div class="_content">
+                              <p style="color: #8B8D9B;">Итого:</p>
+                            </div>
+                          </td>
+
+                          <td style="text-align: right;">
+                            <div class="_content">
+                              <p class="_nowrap _font-medium">20 164 ₽</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </table>
+                  </div>
+
+                  <figcaption class="_content">
+                    <p>* - выведена стоимость основной работы</p>
+                  </figcaption>
+
+                  <div class="table__navigation">
+                    <div class="table__pagination pagination">
+                      <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                      <a href="" class="pagination__item pagination__item_page">2</a>
+                      <a href="" class="pagination__item pagination__item_page">3</a>
+                      <a href="" class="pagination__item pagination__item_page">4</a>
+                      <a href="" class="pagination__item pagination__item_page">5</a>
+                      <div class="pagination__item pagination__item_dots">...</div>
+                      <a href="" class="pagination__item pagination__item_page">13</a>
+                    </div>
+
+                    <div class="table__arrows">
+                      <a href="" class="pagination__item pagination__arrow pagination__item_prev _icon-chevron-right"></a>
+                      <a href="" class="pagination__item pagination__arrow pagination__item_next _icon-chevron-right"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

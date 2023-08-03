@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Аукцион заказов"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/_side-menu.htm',{})
+
+    <main class="page">
+      <section class="template6">
+        <div class="template6__container">
+          <div class="template6__heading _content">
+            <h2 class="template6__title">Аукцион заказов <span style="color: #8C8E9C;">123</span></h2>
+          </div>
+
+          <div class="notification">
+            <div class="notification__wrapper w-100" style="background-color: #FBDFDF;">
+              <div class="notification__icon"><img src="@img/icons/alert.svg" alt="" loading="lazy"></div>
+              <div class="notification__body">
+                <div class="notification__text _content">
+                  <p style="color: #CE4848;"> Пожалуйста, оцените работу. Пока есть неоценённые работы, аукцион для вас будет не доступен! </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="notification__wrapper w-100">
+              <div class="notification__icon"><img src="@img/icons/alert2.svg" alt="" loading="lazy"></div>
+              <div class="notification__body">
+                <div class="notification__text _content">
+                  <p> В Аукционе заказов отображаются работы только по выбранным дисциплинам и типам. В любой момент вы можете самостоятельно отредактировать список выполняемых дисциплин. </p>
+                </div>
+
+                <div class="notification__link">
+                  <a href="" class="text-link text-link_purple">
+                    <span>Мои дисциплины</span>
+                    <i class="_icon-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="template6__table">
+            <div class="table">
+              <form action="" class="table__filters form">
+                <div class="form__row">
+                  <div class="form__item col-12 col-md-6 col-lg-3">
+                    <select name="" class="form">
+                      <option value="" selected>Тип работы</option>
+                      <option value="Курсовая">Курсовая</option>
+                      <option value="Курсовая практика">Курсовая практика</option>
+                      <option value="Отчёт по практике">Отчёт по практике</option>
+                      <option value="Экзаменационный вопрос">Экзаменационный вопрос</option>
+                      <option value="Составление плана курсовой работы">Составление плана курсовой работы</option>
+                    </select>
+                  </div>
+
+                  <div class="form__item col-12 col-md-6 col-lg-3">
+                    <select name="" class="form">
+                      <option value="" selected>Плагиат</option>
+                      <option value="Курсовая">Курсовая</option>
+                      <option value="Курсовая практика">Курсовая практика</option>
+                      <option value="Отчёт по практике">Отчёт по практике</option>
+                      <option value="Экзаменационный вопрос">Экзаменационный вопрос</option>
+                    </select>
+                  </div>
+
+                  <div class="form__item col-12 col-md-6 col-lg-3">
+                    <select name="" class="form">
+                      <option value="0 - 1000 ₽" selected>0 - 1000 ₽</option>
+                      <option value="1000 - 2000 ₽">1000 - 2000 ₽</option>
+                      <option value="2000 - 3000 ₽">2000 - 3000 ₽</option>
+                    </select>
+                  </div>
+
+                  <div class="form__item col-12 col-md-6 col-lg-3">
+                    <div class="d-flex align-items-center h-100">
+                      <div class="checkbox">
+                        <input id="t6_c_1" class="checkbox__input" type="checkbox" value="Не просмотренные" name="form[]">
+                        <label for="t6_c_1" class="checkbox__label"><span class="checkbox__text">Не просмотренные</span></label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+
+              <div class="table__wrapper table__wrapper_with-link">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>№ работы</th>
+                      <th>Тип работы</th>
+                      <th>Предмет</th>
+                      <th style="width: 30%; min-width: 180px;">Тема работы</th>
+                      <th>Срок сдачи</th>
+                      <th>Филиал</th>
+                      <th style="text-align: right;">Стоимоcть</th>
+                      <th></th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr class="_disabled">
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Менеджмент</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr class="_disabled">
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>История</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит
+                            Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая практика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Планирование и прогнозирование</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Отчёт по практике</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽ <br> <span style="color: #58B02F;">Принята!</span></p>
+
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Экзаменационный вопрос</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽ <br> <span style="color: #CE4848;">Отклонена</span></p>
+
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+
+                    <tr>
+                      <td>
+                        <div class="_content">
+                          <a href="order-page.html" class="_nowrap">185485-4</a>
+                        </div>
+                      </td>
+
+                      <td data-title="Тип работы">
+                        <div class="_content">
+                          <p>Курсовая</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Предмет">
+                        <div class="_content">
+                          <p>Экономика</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Тема работы">
+                        <div class="_content">
+                          <p>Товароведная характеристика, экспертиза качества и анализ продаж творога (на примере магазина Магнит, не СЕТИ магнит а именно одного любого магазина).</p>
+
+                          <p style="color: #8C8E9C;">Antiplagiat.ru, 70%</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Срок сдачи">
+                        <div class="_content">
+                          <p>01.03.2023 <br> 13:45</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Филиал">
+                        <div class="_content">
+                          <p>Екатеринбург (Сайт)</p>
+                        </div>
+                      </td>
+
+                      <td data-title="Стоимоcть" style="text-align: right;">
+                        <div class="_content">
+                          <p>800 ₽</p>
+                        </div>
+                      </td>
+
+                      <td>
+                        <a href="auction-single.html" class="table__row-link text-link text-link_purple">
+                          <span>Подробнее</span>
+                          <i class="_icon-chevron-right"></i>
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="table__navigation">
+                <div class="table__pagination pagination">
+                  <div class="pagination__item pagination__item_page pagination__item_current">1</div>
+                  <a href="" class="pagination__item pagination__item_page">2</a>
+                  <a href="" class="pagination__item pagination__item_page">3</a>
+                  <a href="" class="pagination__item pagination__item_page">4</a>
+                  <a href="" class="pagination__item pagination__item_page">5</a>
+                  <div class="pagination__item pagination__item_dots">...</div>
+                  <a href="" class="pagination__item pagination__item_page">13</a>
+                </div>
+
+                <div class="table__arrows">
+                  <a href="" class="pagination__item pagination__arrow pagination__item_prev _icon-chevron-right"></a>
+                  <a href="" class="pagination__item pagination__arrow pagination__item_next _icon-chevron-right"></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

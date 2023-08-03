@@ -1,0 +1,156 @@
+.file {
+  // .file__text
+  &__text,
+  .spollers__body & {
+    ._content {
+      & > * {
+        margin-top: rem(8);
+        margin-bottom: rem(8);
+      }
+    }
+
+    &:not(:last-child) {
+      margin-bottom: rem(16);
+    }
+  }
+  // .file__list
+  &__list {
+    display: grid;
+    align-content: flex-start;
+    row-gap: rem(8);
+  }
+
+  // .file__item
+  &__item {
+  }
+}
+
+.file-item {
+  // .file-item_uploaded
+  &_uploaded {
+    .file-item__wrapper {
+      background-color: $purple-bg;
+    }
+  }
+
+  // .file-item_error
+  &_error {
+    .file-item__wrapper {
+      background-color: $status-red-bg;
+      border-color: $status-red;
+    }
+  }
+
+  // .file-item_upload
+  &_upload {
+    .file-item__wrapper {
+      @include adaptiveValue("height", 54, 48);
+      font-size: rem(24);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $menu-grey;
+      border: 1px dashed $menu-grey;
+      transition:
+        $transition ease border-color,
+        $transition color,
+        $transition background-color 0s;
+
+      @media (any-hover: hover) {
+        &:hover {
+          color: $purple-main;
+          border: 1px dashed $purple-main;
+          background-color: $purple-bg;
+        }
+      }
+    }
+  }
+
+  // .file-item__wrapper
+  &__wrapper {
+    padding: rem(8) rem(16) rem(8) rem(8);
+    border-radius: rem(10);
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    border: rem(1) solid transparent;
+    position: relative;
+  }
+
+  // .file-item__icon
+  &__icon {
+    flex: 0 0 rem(32);
+    max-width: rem(32);
+  }
+
+  // .file-item__body
+  &__body {
+    flex: 1;
+    display: grid;
+    align-content: flex-start;
+    row-gap: rem(2);
+  }
+
+  // .file-item__name
+  &__name {
+  }
+
+  // .file-item__size
+  &__size {
+    font-size: rem(12);
+    line-height: math.div(18, 12);
+    color: #8b8d9b;
+  }
+
+  // .file-item__delete
+  &__delete {
+    font-size: rem(24);
+    background-color: $White;
+    border-radius: 50%;
+    color: $Grey;
+
+    @media (any-hover: hover) {
+      transition: $transition ease color 0s;
+
+      &:hover {
+        color: $mainColor;
+      }
+    }
+  }
+
+  // .file-item__error
+  &__error {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    flex-wrap: wrap;
+    font-size: rem(12);
+    line-height: math.div(18, 12);
+    color: $status-red;
+  }
+
+  // .file-item__error-title
+  &__error-title {
+  }
+
+  // .file-item__error-text
+  &__error-text {
+  }
+
+  // .file-item__upload
+  &__upload {
+    position: absolute;
+    display: block;
+    height: 100% !important;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    font-size: 0;
+    outline: 0;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+  }
+}

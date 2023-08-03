@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Мои дисциплины"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/_side-menu.htm',{})
+
+    <main class="page">
+      <section class="template7">
+        <div class="template7__container">
+          <div class="template7__heading _content">
+            <h1>Мои дисциплины</h1>
+            <p>Отметьте дисциплины и типы по которым Вы хотите выполнять заказы. <br> Аукцион и распределение заказов формируются на основе отмеченных дисциплин.</p>
+          </div>
+
+          <div class="template7__table">
+            <div class="table table_horizontal table_style2">
+              <div class="table__wrapper">
+                <table>
+                  <thead>
+                    <tr>
+                      <th style="width: 16.666%;">Теория</th>
+                      <th style="width: 16.666%;">Практика</th>
+                      <th style="width: 16.666%;">Диплом</th>
+                      <th style="width: 16.666%;">Задачи</th>
+                      <th style="width: 16.666%;">Отчёт по практике</th>
+                      <th style="width: 16.666%;">Уровень владения</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td data-title="Теория">
+                        <div class="_content">
+                          <p>Контрольная работа</p>
+                          <p>Реферат (теория)</p>
+                          <p>Курсовая теория</p>
+                          <p>Экзаменационный вопрос</p>
+                          <p>Тест и тест с объяснением ответа</p>
+                          <p>Презентация</p>
+                        </div>
+                      </td>
+                      <td data-title="Практика">
+                        <div class="_content">
+                          <p>Контрольная работа</p>
+                          <p>Реферат (теория)</p>
+                          <p>Курсовая практика</p>
+                          <p>Курсовой проект</p>
+                          <p>План курсовой работы</p>
+                        </div>
+                      </td>
+                      <td data-title="Диплом">
+                        <div class="_content">
+                          <p>Диплом</p>
+                          <p>План дипломной работы</p>
+                          <p>Диссертация</p>
+                          <p>План диссертации</p>
+                          <p>Магистерская MBA</p>
+                          <p>План магистерской</p>
+                          <p>Доработка клиентской работы</p>
+                          <p>Рецензия, отзыв, раздатка</p>
+                        </div>
+                      </td>
+                      <td data-title="Задачи">
+                        <div class="_content">
+                          <p>Задачи</p>
+                          <p>Бух. проводки</p>
+                          <p>Формы отчетности</p>
+                        </div>
+                      </td>
+                      <td data-title="Отчёт по практике">
+                        <div class="_content">
+                          <p>Отчёт по практике</p>
+                          <p>Дневник</p>
+                          <p>Календарный план</p>
+                          <p>Формы отчетности</p>
+                        </div>
+                      </td>
+                      <td data-title="Уровень владения">
+                        <div class="_content">
+                          <p><strong>Уровень владения</strong></p>
+                          <p>Влияет на распределение заказов, чем выше Ваш уровень знаний, тем более трудоемкие и высокооплачиваемые работы будут Вам ставить.</p>
+                          <p>Выставлять уровень владения соответствующий Вашим знаниям, уровень “профессионал” может стоять только если у Вас отличные отзывы от клиентов по данному предмету!</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="template7__spollers">
+            <div data-spollers class="spollers mb-4">
+              <div class="spollers__item">
+                <button type="button" data-spoller class="spollers__title _spoller-active">Бухгалтерский учёт, аудит и анализ</button>
+                <div class="spollers__body">
+                  <div class="template7__table">
+                    <div class="table table_vertical-middle table_heading-fixed">
+                      <div class="table__wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Дисциплина</th>
+                              <th style="text-align: center; width: 10%;">Теория</th>
+                              <th style="text-align: center; width: 10%;">Практика</th>
+                              <th style="text-align: center; width: 10%;">Диплом</th>
+                              <th style="text-align: center; width: 10%;">Задачи</th>
+                              <th style="text-align: center; width: 10%;">Отчёт по практике</th>
+                              <th style="text-align: right; width: 18%;">Уровень владения</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>Анализ бухгалтерской отчётности</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-1-td-1" class="checkbox__input" type="checkbox" value="item-1-tr-1-td-1" name="form[]" checked>
+                                  <label for="item-1-tr-1-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-1-td-2" class="checkbox__input" type="checkbox" value="item-1-tr-1-td-2" name="form[]" checked>
+                                  <label for="item-1-tr-1-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-1-td-3" class="checkbox__input" type="checkbox" value="item-1-tr-1-td-3" name="form[]" checked>
+                                  <label for="item-1-tr-1-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-1-td-4" class="checkbox__input" type="checkbox" value="item-1-tr-1-td-4" name="form[]">
+                                  <label for="item-1-tr-1-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-1-td-5" class="checkbox__input" type="checkbox" value="item-1-tr-1-td-5" name="form[]" checked>
+                                  <label for="item-1-tr-1-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Аудит</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-2-td-1" class="checkbox__input" type="checkbox" value="item-1-tr-2-td-1" name="form[]" checked>
+                                  <label for="item-1-tr-2-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-2-td-2" class="checkbox__input" type="checkbox" value="item-1-tr-2-td-2" name="form[]" checked>
+                                  <label for="item-1-tr-2-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-2-td-3" class="checkbox__input" type="checkbox" value="item-1-tr-2-td-3" name="form[]" checked>
+                                  <label for="item-1-tr-2-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-2-td-4" class="checkbox__input" type="checkbox" value="item-1-tr-2-td-4" name="form[]">
+                                  <label for="item-1-tr-2-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-2-td-5" class="checkbox__input" type="checkbox" value="item-1-tr-2-td-5" name="form[]" checked>
+                                  <label for="item-1-tr-2-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист" selected>Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>АВХД</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-3-td-1" class="checkbox__input" type="checkbox" value="item-1-tr-3-td-1" name="form[]" checked>
+                                  <label for="item-1-tr-3-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-3-td-2" class="checkbox__input" type="checkbox" value="item-1-tr-3-td-2" name="form[]" checked>
+                                  <label for="item-1-tr-3-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-3-td-3" class="checkbox__input" type="checkbox" value="item-1-tr-3-td-3" name="form[]" checked>
+                                  <label for="item-1-tr-3-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-3-td-4" class="checkbox__input" type="checkbox" value="item-1-tr-3-td-4" name="form[]">
+                                  <label for="item-1-tr-3-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-3-td-5" class="checkbox__input" type="checkbox" value="item-1-tr-3-td-5" name="form[]" checked>
+                                  <label for="item-1-tr-3-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Банковское дело</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-4-td-1" class="checkbox__input" type="checkbox" value="item-1-tr-4-td-1" name="form[]" checked>
+                                  <label for="item-1-tr-4-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-4-td-2" class="checkbox__input" type="checkbox" value="item-1-tr-4-td-2" name="form[]" checked>
+                                  <label for="item-1-tr-4-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-4-td-3" class="checkbox__input" type="checkbox" value="item-1-tr-4-td-3" name="form[]" checked>
+                                  <label for="item-1-tr-4-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-4-td-4" class="checkbox__input" type="checkbox" value="item-1-tr-4-td-4" name="form[]">
+                                  <label for="item-1-tr-4-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-4-td-5" class="checkbox__input" type="checkbox" value="item-1-tr-4-td-5" name="form[]" checked>
+                                  <label for="item-1-tr-4-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Банковский учёт</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-5-td-1" class="checkbox__input" type="checkbox" value="item-1-tr-5-td-1" name="form[]" checked>
+                                  <label for="item-1-tr-5-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-5-td-2" class="checkbox__input" type="checkbox" value="item-1-tr-5-td-2" name="form[]" checked>
+                                  <label for="item-1-tr-5-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-5-td-3" class="checkbox__input" type="checkbox" value="item-1-tr-5-td-3" name="form[]" checked>
+                                  <label for="item-1-tr-5-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-5-td-4" class="checkbox__input" type="checkbox" value="item-1-tr-5-td-4" name="form[]">
+                                  <label for="item-1-tr-5-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-5-td-5" class="checkbox__input" type="checkbox" value="item-1-tr-5-td-5" name="form[]" checked>
+                                  <label for="item-1-tr-5-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Бухгалтерская и налоговая отчетность</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-6-td-1" class="checkbox__input" type="checkbox" value="item-1-tr-6-td-1" name="form[]">
+                                  <label for="item-1-tr-6-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-6-td-2" class="checkbox__input" type="checkbox" value="item-1-tr-6-td-2" name="form[]">
+                                  <label for="item-1-tr-6-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-6-td-3" class="checkbox__input" type="checkbox" value="item-1-tr-6-td-3" name="form[]">
+                                  <label for="item-1-tr-6-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-6-td-4" class="checkbox__input" type="checkbox" value="item-1-tr-6-td-4" name="form[]">
+                                  <label for="item-1-tr-6-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-1-tr-6-td-5" class="checkbox__input" type="checkbox" value="item-1-tr-6-td-5" name="form[]">
+                                  <label for="item-1-tr-6-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="spollers__item">
+                <button type="button" data-spoller class="spollers__title">Менеджмент-маркетинг</button>
+                <div class="spollers__body">
+                  <div class="template7__table">
+                    <div class="table table_vertical-middle table_heading-fixed">
+                      <div class="table__wrapper">
+                        <table>
+                          <thead>
+                            <tr>
+                              <th>Дисциплина</th>
+                              <th style="text-align: center; width: 10%;">Теория</th>
+                              <th style="text-align: center; width: 10%;">Практика</th>
+                              <th style="text-align: center; width: 10%;">Диплом</th>
+                              <th style="text-align: center; width: 10%;">Задачи</th>
+                              <th style="text-align: center; width: 10%;">Отчёт по практике</th>
+                              <th style="text-align: right; width: 18%;">Уровень владения</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+                              <td>Анализ бухгалтерской отчётности</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-1-td-1" class="checkbox__input" type="checkbox" value="item-2-tr-1-td-1" name="form[]" checked>
+                                  <label for="item-2-tr-1-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-1-td-2" class="checkbox__input" type="checkbox" value="item-2-tr-1-td-2" name="form[]" checked>
+                                  <label for="item-2-tr-1-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-1-td-3" class="checkbox__input" type="checkbox" value="item-2-tr-1-td-3" name="form[]" checked>
+                                  <label for="item-2-tr-1-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-1-td-4" class="checkbox__input" type="checkbox" value="item-2-tr-1-td-4" name="form[]">
+                                  <label for="item-2-tr-1-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-1-td-5" class="checkbox__input" type="checkbox" value="item-2-tr-1-td-5" name="form[]" checked>
+                                  <label for="item-2-tr-1-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Аудит</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-2-td-1" class="checkbox__input" type="checkbox" value="item-2-tr-2-td-1" name="form[]" checked>
+                                  <label for="item-2-tr-2-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-2-td-2" class="checkbox__input" type="checkbox" value="item-2-tr-2-td-2" name="form[]" checked>
+                                  <label for="item-2-tr-2-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-2-td-3" class="checkbox__input" type="checkbox" value="item-2-tr-2-td-3" name="form[]" checked>
+                                  <label for="item-2-tr-2-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-2-td-4" class="checkbox__input" type="checkbox" value="item-2-tr-2-td-4" name="form[]">
+                                  <label for="item-2-tr-2-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-2-td-5" class="checkbox__input" type="checkbox" value="item-2-tr-2-td-5" name="form[]" checked>
+                                  <label for="item-2-tr-2-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист" selected>Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>АВХД</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-3-td-1" class="checkbox__input" type="checkbox" value="item-2-tr-3-td-1" name="form[]" checked>
+                                  <label for="item-2-tr-3-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-3-td-2" class="checkbox__input" type="checkbox" value="item-2-tr-3-td-2" name="form[]" checked>
+                                  <label for="item-2-tr-3-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-3-td-3" class="checkbox__input" type="checkbox" value="item-2-tr-3-td-3" name="form[]" checked>
+                                  <label for="item-2-tr-3-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-3-td-4" class="checkbox__input" type="checkbox" value="item-2-tr-3-td-4" name="form[]">
+                                  <label for="item-2-tr-3-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-3-td-5" class="checkbox__input" type="checkbox" value="item-2-tr-3-td-5" name="form[]" checked>
+                                  <label for="item-2-tr-3-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Банковское дело</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-4-td-1" class="checkbox__input" type="checkbox" value="item-2-tr-4-td-1" name="form[]" checked>
+                                  <label for="item-2-tr-4-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-4-td-2" class="checkbox__input" type="checkbox" value="item-2-tr-4-td-2" name="form[]" checked>
+                                  <label for="item-2-tr-4-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-4-td-3" class="checkbox__input" type="checkbox" value="item-2-tr-4-td-3" name="form[]" checked>
+                                  <label for="item-2-tr-4-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-4-td-4" class="checkbox__input" type="checkbox" value="item-2-tr-4-td-4" name="form[]">
+                                  <label for="item-2-tr-4-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-4-td-5" class="checkbox__input" type="checkbox" value="item-2-tr-4-td-5" name="form[]" checked>
+                                  <label for="item-2-tr-4-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Банковский учёт</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-5-td-1" class="checkbox__input" type="checkbox" value="item-2-tr-5-td-1" name="form[]" checked>
+                                  <label for="item-2-tr-5-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-5-td-2" class="checkbox__input" type="checkbox" value="item-2-tr-5-td-2" name="form[]" checked>
+                                  <label for="item-2-tr-5-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-5-td-3" class="checkbox__input" type="checkbox" value="item-2-tr-5-td-3" name="form[]" checked>
+                                  <label for="item-2-tr-5-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-5-td-4" class="checkbox__input" type="checkbox" value="item-2-tr-5-td-4" name="form[]">
+                                  <label for="item-2-tr-5-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-5-td-5" class="checkbox__input" type="checkbox" value="item-2-tr-5-td-5" name="form[]" checked>
+                                  <label for="item-2-tr-5-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Бухгалтерская и налоговая отчетность</td>
+                              <td data-title="Теория" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-6-td-1" class="checkbox__input" type="checkbox" value="item-2-tr-6-td-1" name="form[]">
+                                  <label for="item-2-tr-6-td-1" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Практика" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-6-td-2" class="checkbox__input" type="checkbox" value="item-2-tr-6-td-2" name="form[]">
+                                  <label for="item-2-tr-6-td-2" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Диплом" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-6-td-3" class="checkbox__input" type="checkbox" value="item-2-tr-6-td-3" name="form[]">
+                                  <label for="item-2-tr-6-td-3" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Задачи" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-6-td-4" class="checkbox__input" type="checkbox" value="item-2-tr-6-td-4" name="form[]">
+                                  <label for="item-2-tr-6-td-4" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Отчёт по практике" style="text-align: center;">
+                                <div class="checkbox">
+                                  <input id="item-2-tr-6-td-5" class="checkbox__input" type="checkbox" value="item-2-tr-6-td-5" name="form[]">
+                                  <label for="item-2-tr-6-td-5" class="checkbox__label"></label>
+                                </div>
+                              </td>
+                              <td data-title="Уровень владения" style="text-align: right;">
+                                <select name="" class="form">
+                                  <option value="" selected>Выберите</option>
+                                  <option value="Новичок">Новичок</option>
+                                  <option value="Специалист">Специалист</option>
+                                  <option value="Профессионал">Профессионал</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn_bg-purple">Сохранить изменения</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

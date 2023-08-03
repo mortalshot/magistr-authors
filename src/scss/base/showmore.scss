@@ -1,0 +1,45 @@
+[data-showmore] {
+}
+[data-showmore-content] {
+}
+[data-showmore-button] {
+	span {
+		&:last-child {
+			display: none;
+		}
+		._showmore-active & {
+			display: none;
+			&:last-child {
+				display: block;
+			}
+		}
+	}
+}
+
+// .show-more
+.show-more {
+	// .show-more__content
+	&__content {
+	}
+
+	// .show-more__button
+	&__button {
+		font-weight: 500;
+		font-size: rem(14);
+		line-height: math.div(18, 14);
+		letter-spacing: em(0.42, 14);
+		text-transform: uppercase;
+		width: 100%;
+		padding: rem(16);
+		border: rem(1) solid $menu-grey;
+		border-radius: rem(10);
+		margin-top: rem(24);
+
+		@media (any-hover: hover) {
+			transition: $transition ease border-color 0s;
+			&:hover {
+				border-color: $mainColor;
+			}
+		}
+	}
+}

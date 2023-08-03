@@ -1,0 +1,125 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-schedule:before {
+	content: "\e923";
+}
+._icon-trash:before {
+	content: "\e900";
+}
+._icon-disciplines:before {
+	content: "\e901";
+}
+._icon-edit:before {
+	content: "\e902";
+}
+._icon-email:before {
+	content: "\e903";
+}
+._icon-eye:before {
+	content: "\e904";
+}
+._icon-eye-off:before {
+	content: "\e905";
+}
+._icon-home:before {
+	content: "\e906";
+}
+._icon-info:before {
+	content: "\e907";
+}
+._icon-information:before {
+	content: "\e908";
+}
+._icon-logout:before {
+	content: "\e909";
+}
+._icon-neutral:before {
+	content: "\e90a";
+}
+._icon-new-works:before {
+	content: "\e90b";
+}
+._icon-not-accepted:before {
+	content: "\e90c";
+}
+._icon-notification:before {
+	content: "\e90d";
+}
+._icon-orders:before {
+	content: "\e90e";
+}
+._icon-personal:before {
+	content: "\e90f";
+}
+._icon-phone:before {
+	content: "\e910";
+}
+._icon-popup-close:before {
+	content: "\e911";
+}
+._icon-reviews:before {
+	content: "\e912";
+}
+._icon-rubles:before {
+	content: "\e913";
+}
+._icon-satisfied:before {
+	content: "\e914";
+}
+._icon-not-satisfied:before {
+	content: "\e915";
+}
+._icon-support:before {
+	content: "\e916";
+}
+._icon-upload:before {
+	content: "\e917";
+}
+._icon-accepted:before {
+	content: "\e918";
+}
+._icon-add:before {
+	content: "\e919";
+}
+._icon-add-review:before {
+	content: "\e91a";
+}
+._icon-all:before {
+	content: "\e91b";
+}
+._icon-arrow-left:before {
+	content: "\e91c";
+}
+._icon-auction:before {
+	content: "\e91d";
+}
+._icon-calendar:before {
+	content: "\e91e";
+}
+._icon-chevron-right:before {
+	content: "\e91f";
+}
+._icon-close:before {
+	content: "\e920";
+}
+._icon-completed-works:before {
+	content: "\e921";
+}
+._icon-current:before {
+	content: "\e922";
+}

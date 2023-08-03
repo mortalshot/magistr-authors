@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Календарь"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/_side-menu.htm',{})
+
+    <main class="page">
+      <section class="template12">
+        <div class="template12__container">
+
+          <div class="template12__heading _content _heading">
+            <h1>Календарь</h1>
+          </div>
+
+          <div class="calendar">
+            <div class="calendar__head">
+              <div class="calendar__left">
+                <div class="calendar__month title-h2">Апрель 2023</div>
+                <div class="calendar__legends">
+                  <div class="calendar__legend">
+                    <span class="calendar__legend-mark" style="background-color: #B2B2F6;"></span>
+                    <span>Сроки сдачи работ</span>
+                  </div>
+                </div>
+              </div>
+              <div class="calendar__right">
+                <div class="calendar__actions">
+                  <a href="" class="pagination__item pagination__arrow pagination__item_prev _icon-chevron-right"></a>
+                  <a href="" class="pagination__item pagination__item_today">Сегодня</a>
+                  <a href="" class="pagination__item pagination__arrow pagination__item_next _icon-chevron-right"></a>
+                </div>
+              </div>
+            </div>
+            <div class="calendar__body">
+              <div class="calendar__grid">
+                <div data-template="day-debts" class="calendar__item calendar-item calendar-item_debts info-block__title">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__caption">Долги на сегодня</div>
+                  </div>
+                  <div class="calendar-item__body">
+                    <ul class="calendar-item__list">
+                      <div class="calendar-item__item">
+                        <a href=""><span>Реф, АП.ВУЗ 70, Основы бухучета</span></a>
+                      </div>
+                      <div class="calendar-item__item">
+                        <a href=""><span>Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</span></a>
+                      </div>
+                      <div class="calendar-item__item calendar-item__item_has-children">
+                        <button type="button" class="calendar-item__toggler">
+                          <span>Ещё 3</span>
+                          <i class="_icon-arrow-left"></i>
+                        </button>
+
+                        <ul class="calendar-item__sublist">
+                          <li class="calendar-item__subitem"><a href=""><span>Курс, АП ВУЗ 70</span></a></li>
+                          <li class="calendar-item__subitem"><a href=""><span>Курс, АП ВУЗ 50</span></a></li>
+                          <li class="calendar-item__subitem"><a href=""><span>Курс, АП ВУЗ 20</span></a></li>
+                        </ul>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div id="day-debts" style="display: none;">
+                    <div class="calendar-popup calendar-popup_debts">
+                      <div class="calendar-popup__items">
+                        <div class="calendar-popup__item">
+                          <div class="calendar-popup__head">
+                            <div class="calendar-popup__caption title-h5">12 апреля</div>
+                          </div>
+                          <div class="calendar-popup__body">
+                            <ul class="calendar-popup__list">
+                              <li class="calendar-popup__li"><a href="">Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности. Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="calendar-popup__item">
+                          <div class="calendar-popup__head">
+                            <div class="calendar-popup__caption title-h5">12 апреля</div>
+                          </div>
+                          <div class="calendar-popup__body">
+                            <ul class="calendar-popup__list">
+                              <li class="calendar-popup__li"><a href="">Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности. Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_month-before">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">28</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_month-before">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">29</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_month-before">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">30</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_month-before">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">31</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">1</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">2</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">3</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">4</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">5</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">6</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">7</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">8</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">9</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">10</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">11</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_filled info-block__title" data-template="day-12">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">12</div>
+                  </div>
+                  <div class="calendar-item__body">
+                    <ul class="calendar-item__list">
+                      <div class="calendar-item__item">
+                        <a href=""><span>Реф, АП.ВУЗ 70, Основы бухучета</span></a>
+                      </div>
+                      <div class="calendar-item__item">
+                        <a href=""><span>Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</span></a>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div id="day-12" style="display: none;">
+                    <div class="calendar-popup">
+                      <div class="calendar-popup__items">
+                        <div class="calendar-popup__item">
+                          <div class="calendar-popup__head">
+                            <div class="calendar-popup__caption title-h5">12 апреля</div>
+                          </div>
+                          <div class="calendar-popup__body">
+                            <ul class="calendar-popup__list">
+                              <li class="calendar-popup__li"><a href="">Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">13</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">14</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">15</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">16</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_filled info-block__title" data-template="day-17">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">17</div>
+                  </div>
+                  <div class="calendar-item__body">
+                    <ul class="calendar-item__list">
+                      <div class="calendar-item__item">
+                        <a href=""><span>Реф, АП.ВУЗ 70, Основы бухучета</span></a>
+                      </div>
+                      <div class="calendar-item__item">
+                        <a href=""><span>Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</span></a>
+                      </div>
+                      <div class="calendar-item__item calendar-item__item_has-children">
+                        <button type="button" class="calendar-item__toggler">
+                          <span>Ещё 3</span>
+                          <i class="_icon-arrow-left"></i>
+                        </button>
+
+                        <ul class="calendar-item__sublist">
+                          <li class="calendar-item__subitem"><a href=""><span>Курс, АП ВУЗ 70</span></a></li>
+                          <li class="calendar-item__subitem"><a href=""><span>Курс, АП ВУЗ 50</span></a></li>
+                          <li class="calendar-item__subitem"><a href=""><span>Курс, АП ВУЗ 20</span></a></li>
+                        </ul>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div id="day-17" style="display: none;">
+                    <div class="calendar-popup">
+                      <div class="calendar-popup__items">
+                        <div class="calendar-popup__item">
+                          <div class="calendar-popup__head">
+                            <div class="calendar-popup__caption title-h5">17 апреля</div>
+                          </div>
+                          <div class="calendar-popup__body">
+                            <ul class="calendar-popup__list">
+                              <li class="calendar-popup__li"><a href="">Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение конкурентоспособности</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">18</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">19</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">20</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">21</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">22</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">23</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">24</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">25</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">26</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">27</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">28</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item calendar-item_filled info-block__title" data-template="day-29">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">29</div>
+                  </div>
+                  <div class="calendar-item__body">
+                    <ul class="calendar-item__list">
+                      <div class="calendar-item__item">
+                        <a href=""><span>Реф, АП.ВУЗ 70, Основы бухучета</span></a>
+                      </div>
+                      <div class="calendar-item__item">
+                        <a href=""><span>Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</span></a>
+                      </div>
+                      <div class="calendar-item__item">
+                        <a href=""><span>Курс, АП ВУЗ 70</span></a>
+                      </div>
+                    </ul>
+                  </div>
+
+                  <div id="day-29" style="display: none;">
+                    <div class="calendar-popup">
+                      <div class="calendar-popup__items">
+                        <div class="calendar-popup__item">
+                          <div class="calendar-popup__head">
+                            <div class="calendar-popup__caption title-h5">29 апреля</div>
+                          </div>
+                          <div class="calendar-popup__body">
+                            <ul class="calendar-popup__list">
+                              <li class="calendar-popup__li"><a href="">Реф, АП.ВУЗ 70, Основы бухучета</a></li>
+                              <li class="calendar-popup__li"><a href="">Дор дип, АП.ВУЗ 70, Изучение способов повышения конкурентоспособности</a></li>
+                              <li class="calendar-popup__li"><a href="">Курс, АП ВУЗ 70</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="calendar__item calendar-item">
+                  <div class="calendar-item__head">
+                    <div class="calendar-item__day">30</div>
+                  </div>
+                  <div class="calendar-item__body">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

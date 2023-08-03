@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Личные данные"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/_side-menu.htm',{})
+
+    <main class="page">
+      <section class="template8">
+        <div class="template8__container">
+          <div class="template8__heading _heading _content">
+            <h1>Личные данные</h1>
+          </div>
+
+          <div class="template8__head">
+            <div class="template8__person template8-person">
+              <div class="template8-person__avatar"><img src="@img/icons/person-avatar.jpg" alt="" loading="lazy"></div>
+              <div class="template8-person__body">
+                <div class="template8-person__name title-h4">Крохмаль Татьяна Сергеевна</div>
+
+                <div class="template8-person__contacts contacts">
+                  <div class="contacts__item"><a href="mailto:peika@ya.ru" class="_icon-email"><span>peika@ya.ru</span></a></div>
+                  <div class="contacts__item"><a href="tel:+79628814449" class="_icon-phone"><span>+ 7 962 881 44 49</span></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="template8__actions">
+              <div class="template8__btn">
+                <a href="account-edit.html" class="btn btn_border-grey">
+                  <i class="_icon-edit"></i>
+                  <span>Изменить данные</span>
+                </a>
+              </div>
+              <div class="template8__btn">
+                <a href="account-edit.html" class="btn btn_color-red">
+                  <i class="_icon-logout"></i>
+                  <span>Выйти</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="template8__body">
+            <div class="template8__attributes attributes attributes_medium">
+              <div class="attributes__item">
+                <div class="attributes__caption">Специализация:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">Финансы и кредит, муниципальные и государственные финансы, а так же еще текст две строки</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">ВУЗ:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text" style="color: #8B8D9B;">Не указан</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">Факультет:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">Экономический</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">Доп. телефон:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">8 918 127 62 60</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">Дата рождения:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">02.07.1987</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">Паспортные данные:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">1007 084013, 1111, 18.03.2006</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">Прописка:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">420000 г. Казань, р-н Советский, ул. Красный позиции, д. 29В, кв 89</div>
+                </div>
+              </div>
+              <div class="attributes__item">
+                <div class="attributes__caption">Проживает:</div>
+                <div class="attributes__body">
+                  <div class="attributes__text">420000 г. Казань, р-н Советский, ул. Красный позиции, д. 29В, кв 89</div>
+                </div>
+              </div>
+              <div class="attributes__item attributes__item_payments align-items-center">
+                <div class="attributes__caption">Платёжная система:</div>
+                <div class="attributes__body">
+                  <div class="payments-item">
+                    <div class="payments-item__wrapper">
+                      <div class="payments-item__main">
+                        <div class="payments-item__logo"><img src="@img/icons/bank-1.jpg" alt="" loading="lazy"></div>
+                        <div class="payments-item__body">
+                          <div class="payments-item__name">Тинькофф</div>
+                          <div class="payments-item__account">9828199938881954682874782</div>
+                        </div>
+                      </div>
+                      <div class="payments-item__right">
+                        <div class="payments-item__actions">
+                          <div class="payments-item__button">
+                            <div class="payments-item__status">
+                              <div class="status status_text-red">
+                                <img src="@img/icons/not-confirmed.svg" alt="" loading="lazy">
+                                <span>Не подтверждена</span>
+                              </div>
+                            </div>
+
+                            <button class="btn btn_bg-purple">Подтвердить</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="attributes__item attributes__item_payments align-items-center">
+                <div class="attributes__caption">Платёжная система:</div>
+                <div class="attributes__body">
+                  <div class="payments-item">
+                    <div class="payments-item__wrapper">
+                      <div class="payments-item__main">
+                        <div class="payments-item__logo"><img src="@img/icons/bank-1.jpg" alt="" loading="lazy"></div>
+                        <div class="payments-item__body">
+                          <div class="payments-item__name">Тинькофф</div>
+                          <div class="payments-item__account">9828199938881954682874782</div>
+                        </div>
+                      </div>
+                      <div class="payments-item__right">
+                        <div class="payments-item__status">
+                          <div class="status status_text-green">
+                            <img src="@img/icons/confirmed.svg" alt="" loading="lazy">
+                            <span>Подтверждена</span>
+                          </div>
+
+                          <div class="payments-item__status-date">15.04.2022 11:48:23</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

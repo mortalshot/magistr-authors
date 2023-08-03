@@ -1,0 +1,172 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: rem(8);
+	border-radius: rem(10);
+	border: rem(1) solid;
+	padding: rem(16) rem(24);
+	@include adaptiveValue("padding-left", 24, 16);
+	@include adaptiveValue("padding-right", 24, 16);
+	font-weight: 500;
+	font-size: rem(14);
+	line-height: math.div(18, 14);
+	letter-spacing: em(0.42, 14);
+	text-transform: uppercase;
+	outline: none;
+
+	._icon-eye-off {
+		font-size: rem(18);
+	}
+
+	._icon-edit {
+		font-size: rem(24);
+	}
+
+	._icon-logout {
+		font-size: rem(24);
+	}
+
+	._icon-trash {
+		font-size: rem(24);
+	}
+
+	._icon-upload {
+		font-size: rem(24);
+	}
+
+	// .btn_bg-purple
+	&_bg-purple {
+		border-color: $purple-main;
+		background-color: $purple-main;
+		color: $White;
+
+		@media (any-hover: hover) {
+			transition:
+				$transition ease box-shadow,
+				$transition opacity 0s;
+
+			&:hover {
+				box-shadow: 0px 0px 4px 0px rgba(77, 72, 206, 0.6);
+				opacity: 0.9;
+			}
+		}
+	}
+
+	// .btn_bg-grey
+	&_bg-grey {
+		border-color: $bg-grey;
+		background-color: $bg-grey;
+		color: $mainColor;
+
+		@media (any-hover: hover) {
+			transition:
+				$transition ease box-shadow,
+				$transition opacity 0s;
+
+			&:hover {
+				box-shadow: 0px 0px 4px 0px rgba(77, 72, 206, 0.6);
+				opacity: 0.9;
+			}
+		}
+	}
+
+	// .btn_border-grey
+	&_border-grey {
+		border-color: $menu-grey;
+
+		i {
+			color: $dark-grey;
+			transition: $transition ease color 0s;
+		}
+
+		@media (any-hover: hover) {
+			transition:
+				$transition ease border-color,
+				$transition color,
+				$transition background-color 0s;
+
+			&:hover {
+				border-color: $purple-main;
+				color: $purple-main;
+				background-color: $purple-bg;
+
+				i {
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	// .btn_border-red
+	&_border-red {
+		color: $status-red;
+		border-color: $status-red;
+
+		i {
+			color: $status-red;
+			transition: $transition ease color 0s;
+		}
+
+		@media (any-hover: hover) {
+			transition: $transition ease background-color 0s;
+
+			&:hover {
+				background-color: $status-red-bg;
+			}
+		}
+	}
+
+	// .btn_color-red
+	&_color-red {
+		color: $status-red;
+		border-color: $menu-grey;
+		transition: $transition ease background-color 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $status-red-bg;
+			}
+		}
+	}
+}
+
+.text-link {
+	display: inline-flex;
+	align-items: center;
+	gap: rem(4);
+	font-weight: 500;
+	@include adaptiveValue("font-size", 14, 12);
+	text-transform: uppercase;
+	letter-spacing: em(0.42, 14);
+
+	@media (any-hover: hover) {
+		&:hover {
+			span {
+				text-decoration: underline from-font;
+			}
+		}
+	}
+
+	._icon-chevron-right {
+		font-size: rem(20);
+	}
+
+	._icon-add-review {
+		font-size: rem(24);
+	}
+
+	span {
+		text-decoration: underline transparent from-font;
+		text-underline-offset: 3px;
+		transition: $transition ease text-decoration 0s;
+	}
+
+	// .text-link_purple
+	&_purple {
+		color: $purple-main;
+	}
+}

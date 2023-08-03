@@ -1,0 +1,82 @@
+//<INPUT>
+// Снипет (HTML): inp
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+
+.form__input {
+	width: 100%;
+	display: block;
+	padding: rem(12);
+	font-size: rem(14);
+	line-height: math.div(18, 14);
+	color: $mainColor;
+	border: 1px solid $stroke-grey;
+	border-radius: rem(8) !important;
+	outline: none;
+	transition:
+		$transition ease border-color,
+		$transition box-shadow 0s;
+
+	&::placeholder {
+		transition: $transition ease opacity 0s;
+	}
+
+	&:focus {
+		border-color: $purple-main;
+		box-shadow: 0px 0px 4px 0px rgba(77, 72, 206, 0.6);
+
+		&::placeholder {
+			opacity: 0;
+		}
+	}
+}
+
+.input-text {
+	display: flex;
+	align-items: center;
+	gap: rem(8);
+
+	// .input-text__input
+	&__input {
+		text-align: right;
+	}
+
+	// .input-text__descr
+	&__descr {
+		font-weight: 500;
+		letter-spacing: em(0.42, 14);
+	}
+}
+
+textarea.form__input {
+	resize: none;
+	scrollbar-width: thin;
+	scrollbar-color: transparent transparent;
+	&::-webkit-scrollbar {
+		width: rem(4);
+	}
+	&::-webkit-scrollbar-track {
+		background-color: $scrollTrack;
+		border-radius: rem(10);
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: rem(10);
+		background-color: $scrollThumb;
+	}
+}

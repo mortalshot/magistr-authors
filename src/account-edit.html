@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Редактировать данные"
+})
+
+<body>
+  <div class="wrapper">
+    @@include('html/_header.htm',{})
+    @@include('html/_side-menu.htm',{})
+
+    <main class="page">
+      <section class="template9">
+        <div class="template9__container">
+          <div class="previous-page">
+            <a href="" class="previous-page__link _icon-arrow-left"><span>Назад</span></a>
+          </div>
+
+          <div class="template9__heading _content _heading">
+            <h1>Редактировать данные</h1>
+          </div>
+
+          <div class="template9__rows">
+            <div class="template9__item">
+              <div class="template9__main">
+                <div class="template9__caption title-h5">Общая информация</div>
+
+                <div class="form__row">
+                  <div class="form__item col-12">
+                    <label for="template9-fio" class="form__label">ФИО</label>
+                    <input id="template9-fio" type="text" name="template9-fio" placeholder="Ваше ФИО" value="Крохмаль Татьяна Сергеевна" class="form__input" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-email" class="form__label">Email</label>
+                    <input id="template9-email" type="email" name="template9-email" placeholder="Ваш Email" class="form__input form__input_email" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-phone" class="form__label">Телефон</label>
+                    <input id="template9-phone" type="text" name="template9-phone" placeholder="Ваш Телефон" class="form__input form__input_phone" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-vyz" class="form__label">ВУЗ</label>
+                    <input id="template9-vyz" type="text" name="template9-vyz" placeholder="Ваш ВУЗ" class="form__input" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-fakyltet" class="form__label">Факультет</label>
+                    <input id="template9-fakyltet" type="text" name="template9-fakyltet" placeholder="Ваш Факультет" class="form__input" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-specializacii" class="form__label">Специализации</label>
+                    <textarea id="template9-specializacii" name="template9-specializacii" placeholder="Ваши Специализации" class="form__input" rows="4"></textarea>
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-add-phone" class="form__label">Доп. телефон</label>
+                    <input id="template9-add-phone" type="text" name="template9-add-phone" placeholder="Ваш Доп. телефон" class="form__input form__input_phone" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-birthday" class="form__label">Дата рождения:</label>
+                    <div class="datepicker">
+                      <!-- value format: 01.03.2006 -->
+                      <input id="template9-birthday" type="text" name="template9-birthday" value="01.03.2006" placeholder="" class="form__input datepicker__input" readonly />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="template9__sidebar">
+                <div class="add-avatar add-avatar_has-image">
+                  <div class="add-avatar__image">
+                    <img src="@img/icons/avatar-has-image.jpg" alt="" loading="lazy">
+                    <button type="button" class="add-avatar__reset _icon-trash"></button>
+                  </div>
+
+                  <div class="add-avatar__actions">
+                    <div class="add-avatar__action add-avatar__action_remove">
+                      <div class="add-avatar__button">
+                        <a href="" class="btn btn_border-red">
+                          <i class="_icon-trash"></i>
+                          <span>Удалить фото</span>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="add-avatar__action">
+                      <div class="add-avatar__upload btn btn_border-grey">
+                        <i class="_icon-upload"></i>
+                        <span>Загрузить</span>
+                        <input type="file" class="file-item__upload">
+                      </div>
+
+                      <div class="add-avatar__note">Не более 5 Мб. jpg, png</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="template9__item">
+              <div class="template9__main">
+                <div class="template9__caption title-h5">Паспортные данные</div>
+
+                <div class="form__row">
+                  <div class="form__item col-12">
+                    <label for="template9-passport" class="form__label">Кем выдан</label>
+                    <input id="template9-passport" type="text" name="template9-passport" placeholder="Кем выдан" class="form__input" />
+                  </div>
+                  <div class="form__item col-12 col-sm-6 col-md-4">
+                    <label for="template9-passport-seriya" class="form__label">Серия</label>
+                    <input id="template9-passport-seriya" type="text" name="template9-passport-seriya" placeholder="Серия" class="form__input" />
+                  </div>
+                  <div class="form__item col-12 col-sm-6 col-md-4">
+                    <label for="template9-passport-nomer" class="form__label">Номер</label>
+                    <input id="template9-passport-nomer" type="text" name="template9-passport-nomer" placeholder="Номер" class="form__input" />
+                  </div>
+                  <div class="form__item col-12 col-md-5">
+                    <label for="template9-passport-date" class="form__label">Дата выдачи:</label>
+                    <div class="datepicker">
+                      <!-- value format: 01.03.2006 -->
+                      <input id="template9-passport-date" type="text" name="template9-passport-date" value="18.03.2010" placeholder="" class="form__input datepicker__input" readonly />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="template9__item">
+              <div class="template9__main">
+                <div class="template9__caption title-h5">Адреса</div>
+
+                <div class="form__row">
+                  <div class="form__item col-12">
+                    <label for="template9-propiska" class="form__label">Прописка</label>
+                    <input id="template9-propiska" type="text" name="template9-propiska" placeholder="Прописка" class="form__input" />
+                  </div>
+                  <div class="form__item col-12">
+                    <label for="template9-projivaet" class="form__label">Проживает</label>
+                    <input id="template9-projivaet" type="text" name="template9-projivaet" placeholder="Проживает" class="form__input" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="template9__item">
+              <div class="template9__main">
+                <div class="form__row">
+                  <div class="form__item col-12">
+                    <button type="submit" class="btn btn_bg-purple">Сохранить изменения</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_popup.htm',{})
+  @@include('html/_js.htm',{})
+</body>
+
+</html>

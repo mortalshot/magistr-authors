@@ -1,0 +1,123 @@
+//====================================================================================================
+.header {
+	@media (min-width: $mobile) {
+		display: none;
+	}
+	@media (max-width: $mobile) {
+		position: sticky;
+		top: 0;
+		z-index: 5;
+		display: flex;
+		background-color: $White;
+		@include adaptiveValue("height", 56, 44, 768, 320, 1);
+	}
+
+	// .header__burger
+	&__burger {
+		@media (max-width: $mobile) {
+		}
+	}
+
+	// .header__row
+	&__row {
+		@media (max-width: $mobile) {
+			padding: rem(8) rem(16);
+			flex: 1;
+			display: flex;
+			align-items: center;
+			border-bottom: rem(1) solid $stroke-grey;
+		}
+	}
+
+	// .header__left
+	&__left {
+		@media (max-width: $mobile) {
+			flex: 1;
+		}
+	}
+
+	.logo {
+		@media (max-width: $mobile) {
+			display: flex;
+			@include adaptiveValue("max-width", 115, 80, 768, 320, 1);
+
+			a {
+				display: inline-flex;
+				align-items: center;
+			}
+		}
+	}
+
+	// .header__right
+	&__right {
+	}
+
+	// .header__actions
+	&__actions {
+		@media (max-width: $mobile) {
+			display: flex;
+			align-items: center;
+			gap: rem(8);
+		}
+	}
+
+	// .header__action
+	&__action {
+		@media (max-width: $mobile) {
+			flex: 0 0 rem(24);
+			@include adaptiveValue("flex-basis", 40, 24, 768, 320, 1);
+			@include adaptiveValue("max-width", 40, 24, 768, 320, 1);
+
+			.support-link {
+				@include adaptiveValue("font-size", 24, 16, 768, 320, 1);
+				@include adaptiveValue("padding", 8, 4, 768, 320, 1);
+			}
+		}
+	}
+
+	// .header__avatar
+	&__avatar {
+	}
+}
+
+.icon-menu {
+	@media (max-width: $mobile) {
+		display: block;
+		position: relative;
+		width: rem(48);
+		flex: 0 0 rem(48);
+		height: 100%;
+		cursor: pointer;
+		z-index: 5;
+		background-color: $mainColor;
+
+		&::before,
+		&::after {
+			content: "";
+			transition: all 0.3s ease 0s;
+			left: 50%;
+			transform: translateX(-50%);
+			position: absolute;
+			width: rem(22);
+			height: rem(4);
+			background-color: #d9d9d9;
+		}
+		&::before {
+			top: calc(50% - rem(8));
+		}
+		&::after {
+			bottom: calc(50% - rem(8));
+		}
+		.menu-open & {
+			&::before {
+				top: calc(50% - rem(2));
+				transform: translateX(-50%) rotate(-45deg);
+			}
+			&::after {
+				bottom: calc(50% - rem(2));
+				transform: translateX(-50%) rotate(45deg);
+			}
+		}
+	}
+}
+//====================================================================================================

@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css?_v=20230803152418">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230803152418">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__burger">
+				<button type="button" class="icon-menu"></button>
+			</div>
+
+			<div class="header__row">
+				<div class="header__left">
+					<div class="logo">
+						<a href="home.html"> <img src="img/logo-black.svg" alt="" loading="lazy"> </a>
+					</div>
+				</div>
+				<div class="header__right">
+					<div class="header__actions">
+						<div class="header__action">
+							<a href="" class="header__avatar">
+								<img src="img/avatar.svg" alt="" loading="lazy">
+							</a>
+						</div>
+						<div class="header__action">
+							<a href="" class="support-link _icon-support"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<aside class="side-navigation">
+			<div class="side-navigation__wrapper">
+				<button type="button" class="icon-menu"></button>
+
+				<div class="logo">
+					<a href="home.html">
+						<img src="img/logo.svg" alt="" loading="lazy">
+					</a>
+				</div>
+
+				<nav class="side-menu">
+					<ul class="side-menu__list">
+						<div class="side-menu__caption">РАБОТА</div>
+
+						<li class="menu-item menu-item_active"> <a href="home.html" class="menu-item__link _icon-home" title="Главная"><span class="menu-item__caption"> Главная </span></a> </li>
+						<li class="menu-item"> <a href="my-works.html" class="menu-item__link _icon-orders" title="Мои заказы"><span class="menu-item__caption"> Мои заказы </span></a> </li>
+						<li class="menu-item">
+							<a href="order-auction.html" class="menu-item__link _icon-auction" title="Аукцион заказов (10)">
+								<span class="menu-item__caption"> Аукцион заказов </span>
+
+								<span class="menu-item__notification">10</span>
+							</a>
+						</li>
+						<li class="menu-item"> <a href="reviews.html" class="menu-item__link _icon-reviews" title="Отзывы киентов"><span class="menu-item__caption"> Отзывы киентов </span></a> </li>
+						<li class="menu-item"> <a href="" class="menu-item__link _icon-completed-works" title="Выполненные работы"><span class="menu-item__caption"> Выполненные работы </span></a> </li>
+						<li class="menu-item"> <a href="payments.html" class="menu-item__link _icon-rubles" title="Зарплата"><span class="menu-item__caption"> Зарплата </span></a> </li>
+					</ul>
+					<ul class="side-menu__list">
+						<div class="side-menu__caption">Профиль</div>
+
+						<li class="menu-item"> <a href="account.html" class="menu-item__link _icon-personal" title="Личные данные"><span class="menu-item__caption"> Личные данные </span></a> </li>
+						<li class="menu-item"> <a href="my-disciplines.html" class="menu-item__link _icon-disciplines" title="Мои дисциплины"><span class="menu-item__caption"> Мои дисциплины </span></a> </li>
+					</ul>
+					<ul class="side-menu__list">
+						<div class="side-menu__caption">Дополнительно</div>
+
+						<li class="menu-item menu-item_has-children">
+							<a href="" class="menu-item__link menu-item__link_has-children _icon-information" title="Информация">
+								<span class="menu-item__caption"> Информация </span>
+
+								<button type="button" class="menu__arrow _icon-chevron-right" tabindex="-1"></button>
+							</a>
+
+							<ul class="sub-menu">
+								<button type="button" class="sub-menu__back _icon-arrow-left"><span>Назад</span></button>
+								<div class="side-menu__caption sub-menu__caption">Информация</div>
+
+								<ul>
+									<li><a href="">Соглашение о сотрудничестве</a></li>
+									<li><a href="">Стандарт автора (инструкция)</a></li>
+									<li><a href="">Правила оформления работ</a></li>
+									<li><a href="">Инструкция проверка АП</a></li>
+									<li><a href="">Инструкция поднятия АП</a></li>
+									<li><a href="">Подключение уведомлений</a></li>
+									<li><a href="">Инструкция Telegram-бот</a></li>
+									<li><a href="" data-popup="#job-template">Скачать шаблоны работ</a></li>
+									<li><a href="">Написать руководителю</a></li>
+								</ul>
+							</ul>
+						</li>
+
+						<li class="menu-item"> <a href="calendar.html" class="menu-item__link _icon-calendar" title="Календарь"><span class="menu-item__caption"> Календарь </span></a> </li>
+					</ul>
+					<ul class="side-menu__list">
+						<div class="side-menu__caption">Ваш менеджер</div>
+
+						<li class="menu-item menu-item_has-children">
+							<a href="" class="menu-item__link menu-item__link_has-children _icon-support" title="Контакты">
+								<span class="menu-item__caption"> Контакты </span>
+
+								<button type="button" class="menu__arrow _icon-chevron-right" tabindex="-1"></button>
+							</a>
+
+							<ul class="sub-menu">
+								<button type="button" class="sub-menu__back _icon-arrow-left"><span>Назад</span></button>
+								<div class="side-menu__caption sub-menu__caption">Ваш менеджер</div>
+
+								<div class="support-manager">
+									<div class="support-manager__name title-h4">Таразова Гульназ</div>
+
+									<div class="support-manager__contacts contacts">
+										<div class="contacts__item"><a href="mailto:manager1@magistr.ru" class="_icon-email"><span>manager1@magistr.ru</span></a></div>
+										<div class="contacts__item"><a href="tel:+78432023373" class="_icon-phone"><span>+7 (843) 202 33 73</span></a></div>
+										<div class="contacts__item">
+											<div class="_icon-schedule"><span>Пн - Пт &nbsp;&nbsp; 09:00 - 18:00</span></div>
+										</div>
+									</div>
+								</div>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</aside>
+
+		<main class="page">
+			<section class="template1">
+				<div class="template1__container">
+					<div class="template1__heading">
+						<div class="template1__heading-left">
+							<div class="template1__person template1-person">
+								<div class="template1-person__avatar"><img src="img/avatar.svg" alt="" loading="lazy"></div>
+								<div class="template1-person__body">
+									<div class="template1-person__text">Добрый пожаловать!</div>
+									<div class="template1-person__name title-h2">Корниенко Анна</div>
+								</div>
+								<div class="template1-person__status status status_border-orange">Отсутствует c 27.03.23 по 03.04.23</div>
+							</div>
+						</div>
+						<div class="template1__heading-right">
+							<a href="" class="support-link _icon-support"></a>
+						</div>
+					</div>
+
+					<div class="template1__notification template1-notification">
+						<div class="template1-notification__wrapper">
+							<div class="template1-notification__left">
+								<div class="template1-notification__main">
+									<div class="template1-notification__main-icon template1-notification__main-icon_red _icon-information"></div>
+									<div class="template1-notification__main-body">
+										<div class="_content">
+											<h4>У Вас есть долги по работам!</h4>
+
+											<ul>
+												<li>Вышлите просроченные работы в срочном порядке!</li>
+												<li>Качество работ не должно пострадать!</li>
+												<li>За каждый день просрочки начисляется штраф!</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="template1-notification__right">
+								<div class="template1-notification__total template1-notification__total_red">
+									<div class="template1-notification__total-body">
+										<div class="_content">
+											<p class="title-h2">120 ₽</p>
+											<p>Сумма штрафа</p>
+										</div>
+									</div>
+
+									<div class="template1-notification__total-note">
+										<p>Завтра штраф составит <strong>343 ₽!</strong></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="template1__widgets _row">
+						<div class="template1__widget template1-widget col-12 col-md-3">
+							<div class="template1-widget__wrapper">
+								<div class="template1-widget__quick-access widget-quick-access">
+									<div class="widget-quick-access__item">
+										<a href="debts.html" class="widget-quick-access__link">
+											<div class="widget-quick-access__caption">Долги на сегодня</div>
+											<div class="widget-quick-access__val title-h3 _color-red">3</div>
+										</a>
+									</div>
+									<div class="widget-quick-access__item">
+										<div class="widget-quick-access__link">
+											<div class="widget-quick-access__caption">Доработки</div>
+											<div class="widget-quick-access__val title-h3">0</div>
+										</div>
+									</div>
+									<div class="widget-quick-access__item">
+										<a href="" class="widget-quick-access__link">
+											<div class="widget-quick-access__caption">Не принятые</div>
+											<div class="widget-quick-access__val title-h3 _color-red">1</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="template1__widget template1-widget col-12 col-md-4">
+							<div class="template1-widget__wrapper">
+								<div class="template1-widget__profit widget-profit">
+									<div class="widget-profit__body">
+										<div class="widget-profit__value _nowrap">20 987 ₽</div>
+										<div class="widget-profit__caption">Сумма за выполненные работы</div>
+									</div>
+									<div class="widget-profit__footer">
+										<a href="" class="text-link text-link_purple ">
+											<span>Подробнее</span>
+											<i class="_icon-chevron-right"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="template1__widget template1-widget col-12 col-md-5">
+							<div class="template1-widget__wrapper">
+								<div class="template1-widget__rating widget-rating">
+									<div class="widget-rating__main">
+										<div class="widget-rating__body">
+											<div class="widget-rating__current">
+												<div class="widget-rating__updated">Обновлено 04.06.2023 </div>
+
+												<div class="widget-rating__points title-h4">
+													<span>Ваш рейтинг</span>
+													<span>68,5 балла</span>
+												</div>
+											</div>
+
+											<div class="widget-rating__reviews">
+												<div class="widget-rating__infographic">
+													<div class="widget-rating__infographic-value widget-rating__infographic-value_green" style="width: 60%;">60%</div>
+													<div class="widget-rating__infographic-value widget-rating__infographic-value_orange" style="width: 17%;">17%</div>
+													<div class="widget-rating__infographic-value widget-rating__infographic-value_red" style="width: 23%;">23%</div>
+												</div>
+
+												<div class="widget-rating__reviews-caption">
+													<span>Отзывы</span>
+													<span>(>100 отзывов)</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="widget-rating__footer">
+											<a href="rating.html" class="text-link text-link_purple">
+												<span>Как считается рейтинг</span>
+												<i class="_icon-chevron-right"></i>
+											</a>
+										</div>
+									</div>
+
+									<div class="widget-rating__value">
+										<div class="widget-rating__bg" style="background-color: #58b02f;"></div>
+										<div class="widget-rating__value-title">5</div>
+										<div class="widget-rating__value-text">Высокий</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="template1__table">
+						<div class="table">
+							<h4 class="table__caption">Отзывы клиентов</h4>
+
+							<div class="table__wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th>№ заказа</th>
+											<th>Дата</th>
+											<th style="width: 20%;">Тема работы</th>
+											<th>Результат</th>
+											<th style="width: 30%">Отзыв</th>
+											<th style="text-align: right;">Премия/Штраф</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-red">
+														<i class="_icon-not-satisfied"></i>
+														<span>Не доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-green">
+														<i class="_icon-satisfied"></i>
+														<span>Доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-green _nowrap"><strong>+ 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-orange">
+														<i class="_icon-neutral"></i>
+														<span>Нейтрален</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p><strong>0</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-red">
+														<i class="_icon-not-satisfied"></i>
+														<span>Не доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-green">
+														<i class="_icon-satisfied"></i>
+														<span>Доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-green _nowrap"><strong>+ 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-orange">
+														<i class="_icon-neutral"></i>
+														<span>Нейтрален</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p><strong>0</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-red">
+														<i class="_icon-not-satisfied"></i>
+														<span>Не доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-green">
+														<i class="_icon-satisfied"></i>
+														<span>Доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-green _nowrap"><strong>+ 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-orange">
+														<i class="_icon-neutral"></i>
+														<span>Нейтрален</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p><strong>0</strong></p>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<div class="_content">
+													<a href="order-page.html" class="_nowrap">185485-4</a>
+												</div>
+											</td>
+											<td data-title="Дата">
+												<div class="_content">
+													<p>01.03.2023 <br> 13:45</p>
+												</div>
+											</td>
+											<td data-title="Тема работы">
+												<div class="_content">
+													<p>Доработка №2 к работе №1 (Налоговая систем...</p>
+												</div>
+											</td>
+											<td>
+												<div class="_content">
+													<div class="status status_bg-red">
+														<i class="_icon-not-satisfied"></i>
+														<span>Не доволен</span>
+													</div>
+												</div>
+											</td>
+											<td data-title="Отзыв">
+												<div class="_content">
+													<p>Не очень доволен работой, не стал перечислять замечания, сказал сам сидит всё устраняет - в срок не отправил работу. На доработку не ротправит - так как не уверен, что мы выполним работу</p>
+												</div>
+											</td>
+											<td data-title="Премия/Штраф" style="text-align: right;">
+												<div class="_content">
+													<p class="_color-red _nowrap"><strong>- 150 ₽</strong></p>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<div class="table__navigation">
+								<div class="table__pagination pagination">
+									<div class="pagination__item pagination__item_page pagination__item_current">1</div>
+									<a href="" class="pagination__item pagination__item_page">2</a>
+									<a href="" class="pagination__item pagination__item_page">3</a>
+									<a href="" class="pagination__item pagination__item_page">4</a>
+									<a href="" class="pagination__item pagination__item_page">5</a>
+									<div class="pagination__item pagination__item_dots">...</div>
+									<a href="" class="pagination__item pagination__item_page">13</a>
+								</div>
+
+								<div class="table__arrows">
+									<a href="" class="pagination__item pagination__arrow pagination__item_prev _icon-chevron-right"></a>
+									<a href="" class="pagination__item pagination__arrow pagination__item_next _icon-chevron-right"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="notification-widget _active" data-lp>
+				<div class="notification-widget__inner">
+					<div class="notification-widget__wrapper">
+						<div class="notification-widget__left">
+							<div class="notification-widget__body">
+								<div class="notification-widget__icon _icon-notification"></div>
+								<div class="notification-widget__text _content">
+									<h4>Новое сообщение</h4>
+									<p>Небольшой текст описания уведомления и еще чтобы было в пару строк.</p>
+								</div>
+							</div>
+						</div>
+						<div class="notification-widget__actions">
+							<div class="notification-widget__action">
+								<a href="" class="btn btn_bg-purple" data-popup="#new-message">Читать</a>
+							</div>
+							<div class="notification-widget__action">
+								<button class="notification-widget__close btn btn_bg-grey">Закрыть</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+			</div>
+		</footer>
+	</div>
+	<div id="value-for-money" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-popup-close"></button>
+				<div class="popup__text">
+					<h3 class="popup__title">Соотношение цены и качества</h3>
+					<div class="_content">
+						<p>При оформлении заказа через сайт компании, клиент осуществляет выбор показателя «Соотношение цены и качества»:</p>
+
+						<ol>
+							<li>Главное чтобы работу приняли, оценка не так важна (самые низкие цены)</li>
+							<li>Мне нужна хорошая оценка (средние цены)</li>
+							<li>Мне нужна отличная оценка (высокие цены)</li>
+						</ol>
+
+						<p>Данный показатель влияет на стоимость работы и как следствие на уровень требований к работе.</p>
+
+						<p>Текущий уровень требований*:</p>
+
+						<div class="table">
+							<div class="table__wrapper">
+								<table>
+									<thead>
+										<tr>
+											<th style="width: 33.33%;">Показатель «Соотношение цены и качества»</th>
+											<th style="text-align: center; width: 33.33%;">Влияние на стоимость</th>
+											<th style="width: 33.33%;">Требования к заказу</th>
+										</tr>
+									</thead>
+
+									<tbody>
+										<tr>
+											<td data-title="Показатель «Соотношение цены и качества»">Главное чтобы работу приняли, оценка не так важна (самые низкие цены)</td>
+											<td data-title="Влияние на стоимость" style="text-align: center;">-</td>
+											<td data-title="Требования к заказу">Оригинальность по Etxt.ru от 20%</td>
+										</tr>
+										<tr>
+											<td data-title="Показатель «Соотношение цены и качества»">Мне нужна хорошая оценка (средние цены)</td>
+											<td data-title="Влияние на стоимость" style="text-align: center;">+20%</td>
+											<td data-title="Требования к заказу">Оригинальность по Etxt.ru от 30%</td>
+										</tr>
+										<tr>
+											<td data-title="Показатель «Соотношение цены и качества»">Мне нужна отличная оценка (высокие цены)</td>
+											<td data-title="Влияние на стоимость" style="text-align: center;">+50%</td>
+											<td data-title="Требования к заказу">Оригинальность по Etxt.ru от 40%</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+
+							<figcaption class="_content">
+								<p>* требования могут быть изменены</p>
+							</figcaption>
+						</div>
+
+						<p></p>
+
+						<p>Таким образом, перед тем как отправлять работу на проверку, убедитесь что требования соблюдены. Проверить оригинальность можно с помощью программы, доступной по ссылке <a href="www.etxt.ru/downloads/etxt_antiplagiat.exe">www.etxt.ru/downloads/etxt_antiplagiat.exe</a></p>
+
+						<p>Для чего введен показатель «Соотношение цены и качества». Дело в том, что у клиентов разный уровень требований, например работы клиентов из Top ВУЗов проверяются более тщательно и как следствие автор должен уделить такой работе больше времени, но и оплачивается такая работа по более высокой цене.</p>
+
+						<p>На данный момент коэффициент "Соотношении цены и качества" присутствует более чем у половины заказов.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="job-template" aria-hidden="true" class="popup popup_job-template">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-popup-close"></button>
+				<div class="popup__text">
+					<h3 class="popup__title">Шаблоны работ</h3>
+
+					<div class="job-templates">
+						<div class="job-templates__items">
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/docx.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Образец оформления реферата.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/docx.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Дневник практики.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/docx.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Курс. Первые 3-5 слов темы. %.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/ppt.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Календарный план практики.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/docx.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Образец оформления реферата.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/docx.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Дневник практики.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/docx.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Курс. Первые 3-5 слов темы. %.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/ppt.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Календарный план практики.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+							<div class="job-templates__item">
+								<div class="job-templates__item-wrapper">
+									<div class="job-templates__item-icon"><img src="img/icons/ppt.svg" alt="" loading="lazy"></div>
+									<div class="job-templates__item-text">Фамилия автора. Календарный план практики.docx</div>
+									<a href="" class="job-templates__item-link _icon-upload"><span>Скачать</span></a>
+								</div>
+							</div>
+						</div>
+
+						<div class="job-templates__note _icon-information">
+							<div class="job-templates__note-body">
+								<div class="job-templates__note-text">Обратите внимание на то как именовать выполненные работы (файлы): <br> Фамилия автора. Курc. Тема.docx</div>
+
+								<div class="job-templates__example">
+									<div class="job-templates__caption">Пример:</div>
+
+									<div class="file__item file-item file-item_uploaded">
+										<div class="file-item__wrapper">
+											<div class="file-item__icon"> <img src="img/icons/zip.svg" alt="" loading="lazy"> </div>
+
+											<div class="file-item__body">
+												<div class="file-item__name">Мишин Гордей Петрович. 5 курс. Основы бухучёта.zip</div>
+												<div class="file-item__size">24.7 Мб</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="new-message" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<div class="popup__text">
+					<h3 class="popup__title">Заголовок сообщения</h3>
+					<div class="_content">
+						<p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке модели развития.</p>
+						<p><a href="magistr.ru">magistr.ru</a></p>
+						<p>Не следует, однако забывать, что постоянное информационно-пропагандистское обеспечение нашей деятельности в значительной степени обуславливает создание системы обучения кадров, соответствует насущным потребностям.</p>
+					</div>
+
+					<div class="popup__button"><button type="button" data-close="" class="btn btn_bg-grey w-100">Закрыть</button></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="incorrect-design" aria-hidden="true" class="popup popup_incorrect">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close _icon-popup-close"></button>
+
+				<div class="popup__text">
+					<h3 class="popup__title">Опишите, что именно оформлено не правильно</h3>
+
+
+					<form action="" class="form">
+						<div class="form__row mb-3">
+							<div class="form__item col-12">
+								<textarea name="form[]" placeholder="Ваш комментарий" class="form__input" rows="3"></textarea>
+							</div>
+						</div>
+
+						<div class="form__submit"><button type="submit" class="btn btn_bg-purple">Отправить</button></div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="https://unpkg.com/js-datepicker?_v=20230803152418"></script>
+	<script src="js/app.min.js?_v=20230803152418"></script>
+</body>
+
+</html>

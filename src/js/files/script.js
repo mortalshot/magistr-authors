@@ -217,28 +217,28 @@ if (datepickerInputs.length > 0) {
    datepickerInputs.forEach(datepickerInput => {
       const inputValue = datepickerInput.value;
       console.log(inputValue);
-   
+
       const input = datepicker(datepickerInput, {
          customDays: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"],
          customMonths: ["Янв", "Фев", "Мар", "Апр", "Май", "Июн", "Июл", "Авг", "Сен", "Окт", "Ноя", "Дек"],
          overlayButton: 'Применить',
          overlayPlaceholder: 'Год (4 цифры)',
          startDay: 0,
-   
+
          formatter: (input, date, instance) => {
             const value = date.toLocaleDateString();
             input.value = value;
          },
-   
+
          onSelect: function (input, instance, date) {
          }
       })
-   
+
       if (inputValue != '') {
          const dateParts = inputValue.split(".");
          // год, месяц-1, день
          input.setDate(new Date(dateParts[2], parseInt(dateParts[1]) - 1, dateParts[0]), true);
       }
    });
-   
+
 }

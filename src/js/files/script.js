@@ -64,52 +64,25 @@ if (template4NavigationLinks.length > 0) {
 const template4Sections = document.querySelectorAll('.template4__section');
 const template4Links = document.querySelectorAll('.template4__link');
 
-if (template4Sections.length > 0 && template4Links.length > 0) {
-   if (window.innerWidth >= 767.98) {
-      const template4CallBack = (entries) => {
-         entries.forEach(entry => {
-            if (entry.isIntersecting && entry.intersectionRatio > 0.5) {
-               template4Links.forEach(link => link.classList.remove('template4__link_active'));
+// Подсвечиваем первый пункт меню, при загрузке страницы
+window.addEventListener('DOMContentLoaded', function () {
+   setTimeout(() => {
+      template4Links.forEach(link => link.classList.remove('template4__link_active'));
+      document.querySelector('.template4__link').classList.add('template4__link_active');
+   }, 300);
+})
 
-               const activeID = entry.target.id;
-               const activeLink = document.querySelector(`.template4__link[data-goto="#${activeID}"]`);
+window.addEventListener('scroll', function () {
+   let scrollDistance = window.scrollY;
 
-               if (activeLink) {
-                  activeLink.classList.add('template4__link_active');
-               }
-            }
-         });
-      };
+   template4Sections.forEach((element, i) => {
+      if (element.offsetTop - 100 <= scrollDistance) {
+         template4Links.forEach(link => link.classList.remove('template4__link_active'));
 
-      const template4SectionsObserver = new IntersectionObserver(template4CallBack, {
-         threshold: [0.2, 0.5, 0.8],
-      })
-
-      template4Sections.forEach(section => template4SectionsObserver.observe(section));
-   }
-   else {
-      const template4CallBack = (entries) => {
-         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-               template4Links.forEach(link => link.classList.remove('template4__link_active'));
-
-               const activeID = entry.target.id;
-               const activeLink = document.querySelector(`.template4__link[data-goto="#${activeID}"]`);
-
-               if (activeLink) {
-                  activeLink.classList.add('template4__link_active');
-               }
-            }
-         });
-      };
-
-      const template4SectionsObserver = new IntersectionObserver(template4CallBack, {
-         threshold: [0.1, 0.5, 0.9],
-      })
-
-      template4Sections.forEach(section => template4SectionsObserver.observe(section));
-   }
-}
+         template4Links[i].classList.add('template4__link_active');
+      }
+   });
+})
 
 // Проверяем, есть ли вертикальный скролл у списка assessment__list
 const listWidthScrollCheck = document.querySelectorAll('._can-be-vertical-scroll');

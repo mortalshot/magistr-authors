@@ -3530,37 +3530,21 @@
     }
     const template4Sections = document.querySelectorAll(".template4__section");
     const template4Links = document.querySelectorAll(".template4__link");
-    if (template4Sections.length > 0 && template4Links.length > 0) if (window.innerWidth >= 767.98) {
-        const template4CallBack = entries => {
-            entries.forEach((entry => {
-                if (entry.isIntersecting && entry.intersectionRatio > .5) {
-                    template4Links.forEach((link => link.classList.remove("template4__link_active")));
-                    const activeID = entry.target.id;
-                    const activeLink = document.querySelector(`.template4__link[data-goto="#${activeID}"]`);
-                    if (activeLink) activeLink.classList.add("template4__link_active");
-                }
-            }));
-        };
-        const template4SectionsObserver = new IntersectionObserver(template4CallBack, {
-            threshold: [ .2, .5, .8 ]
-        });
-        template4Sections.forEach((section => template4SectionsObserver.observe(section)));
-    } else {
-        const template4CallBack = entries => {
-            entries.forEach((entry => {
-                if (entry.isIntersecting) {
-                    template4Links.forEach((link => link.classList.remove("template4__link_active")));
-                    const activeID = entry.target.id;
-                    const activeLink = document.querySelector(`.template4__link[data-goto="#${activeID}"]`);
-                    if (activeLink) activeLink.classList.add("template4__link_active");
-                }
-            }));
-        };
-        const template4SectionsObserver = new IntersectionObserver(template4CallBack, {
-            threshold: [ .1, .5, .9 ]
-        });
-        template4Sections.forEach((section => template4SectionsObserver.observe(section)));
-    }
+    window.addEventListener("DOMContentLoaded", (function() {
+        setTimeout((() => {
+            template4Links.forEach((link => link.classList.remove("template4__link_active")));
+            document.querySelector(".template4__link").classList.add("template4__link_active");
+        }), 300);
+    }));
+    window.addEventListener("scroll", (function() {
+        let scrollDistance = window.scrollY;
+        template4Sections.forEach(((element, i) => {
+            if (element.offsetTop - 100 <= scrollDistance) {
+                template4Links.forEach((link => link.classList.remove("template4__link_active")));
+                template4Links[i].classList.add("template4__link_active");
+            }
+        }));
+    }));
     const listWidthScrollCheck = document.querySelectorAll("._can-be-vertical-scroll");
     if (listWidthScrollCheck.length > 0) listWidthScrollCheck.forEach((list => {
         if (list.scrollHeight > list.clientHeight) list.classList.add("_has-vertical-scroll");
